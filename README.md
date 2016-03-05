@@ -1,4 +1,4 @@
 # joshbraby
-simple index.html pg made with SVGs
+frontend web-app-dashboard
 
 http://joshbraby.github.io/web-app-dashboard
