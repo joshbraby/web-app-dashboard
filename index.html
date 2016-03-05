@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>YourApp&trade;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header class="clearfix">
+
+      <h2>Your<span class="reg-font-weight">App&trade;</span></h2>
+      <div class="header-container-right">
+        <div class="icon-container"><img src="icons/icon-bell.svg" alt="" class="header-icon"/></div>
+        <div class="icon-container"><img src="icons/jb.jpg" alt="Josh Braby's profile picture" class="profile-image"></div>
+        <div class="user-name">Josh Braby</div>
+      </div>
+
+    </header>
+
+    <div class="main-container">
+
+      <nav class="clearfix">
+        <ul>
+          <li><img src="icons/icon-dashboard.svg" alt="" /></li>
+          <li><img src="icons/icon-members.svg" alt="" /></li>
+          <li><img src="icons/icon-visits.svg" alt="" /></li>
+          <li><img src="icons/icon-settings.svg" alt="" /></li>
+        </ul>
+      </nav>
+
+      <div class="main-content-container clearfix">
+
+        <div class="h1-textbox-container clearfix">
+          <h1>Dashboard</h1>
+          <span><input type="text" placeholder="   Search" /><i class="fa fa-search"></i></span>
+        </div> <!-- closing h1-text-container -->
+
+        <p class="alert">Alert <span class="reg-font-weight"> Nullam quis risus eget urna mollis ornare vel eu loe. Nullam id dolor id nidh ultricies vehicula ut id elit. Curabitur blandit tempus portitor.</span><span class="close-x">x</span></p>
+        
+        <h5 class="traffic-h5">Traffic</h5>
+        <ul class="line-graph-types">
+          <li data-content="line-chart-hourly">Hourly</li>
+          <li data-content="line-chart-daily">Daily</li>
+          <li data-content="line-chart-weekly" class="line-graph-shown">Weekly</li>
+          <li data-content="line-chart-monthly">Monthly</li>
+        </ul>
+
+        <div class="large-section">
+          <div class="line-chart-container">
+            <canvas id="line-chart-weekly" width="1100" height="256"></canvas>
+            <canvas id="line-chart-hourly" width="1100" height="256"></canvas>
+            <canvas id="line-chart-daily" width="1100" height="256"></canvas>
+            <canvas id="line-chart-monthly" width="1100" height="256"></canvas>
+          </div> <!-- closing line-chart-container -->
+        </div> <!-- closing large-section -->
+        
+        <div class="large-section">
+
+          <div class="medium-section">
+            <h5>Daily Traffic</h5>
+            <div class="bar-donut-chart-containers">
+              <canvas id="bar-chart" width="450" height="288"></canvas>
+            </div> <!-- closing bar-donut-chart-container -->
+          </div> <!-- closing medium-section -->
+
+          <div class="medium-section">
+            <h5>Mobile Users</h5>
+            <div class="bar-donut-chart-containers">
+              <div class="donut-chart-container">
+                <canvas id="donut-chart" width="100" height="100"></canvas>
+              </div> <!-- closing donut-chart-container -->
+              <div class="chart-legend">
+                  <ul>
+                      <li class="phones">Phones</li>
+                      <li class="tablets">Tablets</li>
+                      <li class="desktops">Desktop</li>
+                  </ul>
+              </div> <!-- closing chart-legend -->
+            </div> <!-- closing bar-donut-chart-containers -->
+          </div> <!-- closing medium-section -->
+
+        </div> <!-- closing large-section -->
+
+        <div class="large-section clearfix">
+          <h5>Social Status</h5>
+          <div class="small-section clearfix">
+            <div class="svg-container">
+              <img src="icons/icon-twitter.svg" alt="" />
+            </div> <!-- closing svg-container -->
+            <div class="right-container">
+              <h4>Twitter</h4>
+              <p>10,345</p>
+            </div> <!-- closing right-container -->
+          </div> <!-- closing small-section -->
+          <div class="small-section clearfix">
+            <div class="svg-container">
+              <img src="icons/icon-facebook.svg" alt="" />
+            </div> <!-- closing svg-container -->
+            <div class="right-container">
+              <h4>Facebook</h4>
+              <p>8,739</p>
+            </div> <!-- closing right-container -->
+          </div> <!-- closing small-section -->
+          <div class="small-section clearfix">
+            <div class="svg-container">
+              <img src="icons/icon-google-plus.svg" alt="" />
+            </div> <!-- closing svg-container -->
+            <div class="right-container">
+              <h4>Google+</h4>
+              <p>10,345</p>
+            </div> <!-- closing right-container -->
+          </div> <!-- closing small-section -->
+        </div> <!-- closing large-section -->
+        
+        <div class="large-section">
+          <div class="medium-section">
+            <h5>New Members</h5>
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-1.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name dark-gray-font">Pete Smith</div>
+                <div class="new-user-email"><a href="mailto:braby21@gmail.com">petersmith@gmail.com</a></div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date">10/15/15</div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-2.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name dark-gray-font">Kendrick Perk</div>
+                <div class="new-user-email"><a href="mailto:braby21@gmail.com">bigperk@gmail.com</a></div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date">10/15/15</div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-3.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name dark-gray-font">Tyler F</div>
+                <div class="new-user-email"><a href="mailto:braby21@gmail.com">tylerraps@gmail.com</a></div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date">10/15/15</div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-4.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name dark-gray-font">Franky</div>
+                <div class="new-user-email"><a href="mailto:braby21@gmail.com">lilfrank@gmail.com</a></div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date">10/15/15</div>
+            </div> <!-- closing new-member-container -->
+          </div> <!-- closing medium-section -->
+        </div> <!-- closing large-section -->
+
+          <div class="medium-section">
+            <h5>Recent Activity</h5>
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-1.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name">Pete Smith commented on <span class="dark-gray-font">YourApp's SEO Tips</span></div>
+                <div class="new-user-email dark-gray-font">4 hours ago</div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date"><i class="fa fa-angle-right fa-2x"></i></div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-2.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name">Kendrick Perk liked the post <span class="dark-gray-font">Facebook's Changed for 2016</span></div>
+                <div class="new-user-email dark-gray-font">5 hours ago</div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date"><i class="fa fa-angle-right fa-2x"></i></div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-3.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name">Tyler F commented on <span class="dark-gray-font">Facebook's Changed for 2016</span></div>
+                <div class="new-user-email dark-gray-font">5 hours ago</div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date"><i class="fa fa-angle-right fa-2x"></i></div>
+            </div> <!-- closing new-member-container -->
+            <div class="new-member-container clearfix">
+              <img src="icons/profile-pic-4.jpg" alt="'s profile picture" class="new-member-profile-image">
+              <div class="new-user-name-date-container">
+                <div class="new-user-name">Franky posted <span class="dark-gray-font">YourApp's SEO Tips</span></div>
+                <div class="new-user-email dark-gray-font">1 day go</div>
+              </div> <!-- closing new-user-name-date-container -->
+              <div class="new-user-date"><i class="fa fa-angle-right fa-2x"></i></div>
+            </div> <!-- closing new-member-container -->
+          </div> <!-- closing medium section -->
+
+      <div class="large-section">
+        <div class="medium-section">
+            <h5>Message User</h5>
+              <input type="text" id="user-search" placeholder="Search for User" />
+              <textarea rows="5" id="user-message" placeholder="Message for User"></textarea>
+              <button id="send-button">SEND</button>
+              <span class="submitted-message"></span>
+        </div> <!-- closing medium-section -->
+
+        <div class="medium-section">
+            <h5>Settings</h5>
+            <div class="settings-container">
+              <div class="settings-toggle">
+                Send Email Notifications<span class="settings-toggle-button"><i class="fa fa-toggle-on fa-3x"></i><i class="fa fa-toggle-off fa-3x"></i></span>
+              </div> <!-- closing settings toggle -->
+              <div class="settings-toggle">
+                Set Profile to Public<span class="settings-toggle-button"><i class="fa fa-toggle-on fa-3x"></i><i class="fa fa-toggle-off fa-3x"></i></span>
+              </div> <!-- closing settings-toggle -->
+              <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+                <span>Eastern Time Zone<i class="fa fa-angle-down fa-2x"></i></span>
+                <ul class="dropdown">
+                  <li><a href="#"><i class="icon-envelope icon-large"></i>Eastern Time Zone</a></li>
+                  <li><a href="#"><i class="icon-truck icon-large"></i>Central Time Zone</a></li>
+                  <li><a href="#"><i class="icon-plane icon-large"></i>Mountain Time Zone</a></li>
+                  <li><a href="#"><i class="icon-plane icon-large"></i>Pacific Time Zone</a></li>
+                </ul>
+              </div> <!-- closing #dd -->
+              <button id="save-button">Save</button>
+              <button id="cancel-button">Cancel</button>
+            </div> <!-- closing settings container -->
+        </div> <!-- closing medium-section -->
+       </div> <!-- closing large-section -->
+
+      </div> <!-- closing main-content-container -->
+
+      <footer>
+        
+      </footer>
+
+    </div> <!-- closing main-container -->
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+
+</html>
