@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+	// # SWITCH DASHBOARD
+
+	var $navDashboard = $('.main-container nav ul li');
+
+	$navDashboard.on('click', function() {
+
+		$(this).siblings().removeClass('selected');
+		$(this).addClass('selected');
+
+	});
+
+	// # NOTIFICATIONS
+
+	var $bell = $('.header-icon');
+	var $closeNotification = $('.close-notification');
+	var $notification = $('.notification');
+
+	$bell.on('click', function() {
+
+		$notification.removeClass('inactive');
+		$closeNotification.removeClass('inactive');
+		$('.green-dot').hide();
+
+	});
+
+	$closeNotification.on('click', function() {
+		$notification.addClass('inactive');
+		$closeNotification.addClass('inactive');
+	})
+
 	// # TOGGLE ON/OFF
 
 	var $notificationsToggle = $('.settings-toggle-button');
@@ -27,8 +57,12 @@ $(document).ready(function() {
 
 		if (!$('#user-search').val() || !$('#user-message').val()) {
 			$submittedMessage.text("Please Enter Missing Info");
+			$submittedMessage.removeClass("purple-font");
+			$submittedMessage.addClass("red-font");
 		} else {
 			$submittedMessage.text("Submission Successful!");
+			$submittedMessage.removeClass("red-font");
+			$submittedMessage.addClass("purple-font");
 		}
 
 	});
@@ -60,49 +94,18 @@ $(document).ready(function() {
 
 	});
 
-	$(function() {
 
-		var dd = new DropDown( $('#dd') );
-
-		$(document).click(function() {
-			// all dropdowns
-			$('.wrapper-dropdown-1').removeClass('active');
-		});
-
+	$('.wrapper-dropdown-3').on('click', function() {
+		$('#dropdown').toggleClass('inactive');
 	});
 
-	function DropDown(el) {
-	    this.dd = el;
-	    this.placeholder = this.dd.children('span');
-	    this.opts = this.dd.find('ul.dropdown > li');
-	    this.val = '';
-	    this.index = -1;
-	    this.initEvents();
-	}
-	DropDown.prototype = {
-	    initEvents : function() {
-	        var obj = this;
+	$('#dropdown li').on('click', function(e) {
 
-	        obj.dd.on('click', function(event){
-	            $(this).toggleClass('active');
-	            return false;
-	        });
+		e.preventDefault();
+		var text = $(this).text();
+		$('.current-selection').text(text);
 
-	        obj.opts.on('click',function(){
-	            var opt = $(this);
-	            obj.val = opt.text();
-	            obj.index = opt.index();
-	            obj.placeholder.text(obj.val);
-	        });
-	    },
-	    getValue : function() {
-	        return this.val;
-	    },
-	    getIndex : function() {
-	        return this.index;
-	    }
-	}
-
+	});
 
 	var donutChart = $('#donut-chart').get(0).getContext("2d");
 	var barChart = $('#bar-chart').get(0).getContext("2d");
