@@ -4,7 +4,9 @@ $(document).ready(function() {
 
 	var $navDashboard = $('.main-container nav ul li');
 
-	$navDashboard.on('click', function() {
+	$navDashboard.on('click', function(e) {
+
+		e.preventDefault();
 
 		$(this).siblings().removeClass('selected');
 		$(this).addClass('selected');
