@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+    	"userImgURL": "icons/profile-pic-1.jpg",
+		"userName": "Pete Smith",
+		"userEmail": "petersmith@gmail.com",
+		"userSignupDate": "10/15/15"
+    },
+    {
+		"userImgURL": "icons/profile-pic-2.jpg",
+		"userName": "Ken Perk",
+		"userEmail": "bigperk@gmail.com",
+		"userSignupDate": "10/15/15"
+    },
+    {
+		"userImgURL": "icons/profile-pic-3.jpg",
+		"userName": "Tyler F",
+		"userEmail": "tylerraps@gmail.com",
+		"userSignupDate": "10/15/15"
+    },
+    {
+		"userImgURL": "icons/profile-pic-4.jpg",
+		"userName": "Franky",
+		"userEmail": "bigfrank@gmail.com",
+		"userSignupDate": "10/15/15"
+    }
+  ]
+}
+
+
+
+

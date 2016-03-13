@@ -1,0 +1,32 @@
+{
+  "activity": [
+  	{
+  		"userImgURL": "icons/profile-pic-1.jpg",
+  		"userName": "Pete Smith",
+		"userAction": "commented on",
+		"groupName": "YourApp's SEO Tips",
+		"activityTime": "4 hours ago"
+	},
+	{
+		"userImgURL": "icons/profile-pic-2.jpg",
+  		"userName": "Ken Perk",
+		"userAction": "liked the post",
+		"groupName": "Facebook's Changed for 2016",
+		"activityTime": "5 hours ago"
+	},
+		{
+		"userImgURL": "icons/profile-pic-3.jpg",
+  		"userName": "Tyler F",
+		"userAction": "liked the post",
+		"groupName": "Facebook's Changed for 2016",
+		"activityTime": "5 hours ago"
+	},
+		{
+		"userImgURL": "icons/profile-pic-4.jpg",
+  		"userName": "Franky",
+		"userAction": "posted",
+		"groupName": "YourApp's SEO Tips",
+		"activityTime": "1 day ago"
+	}
+  ]
+}

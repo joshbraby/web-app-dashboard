@@ -1,5 +1,56 @@
 $(document).ready(function() {
 
+	// # AJAX / JSON NEW MEMBER & RECENT ACTIVITY REQUEST & RESPONSE
+
+	var HTML;
+
+	var usersURL = 'js/users.json';
+	var activityURL = 'js/activity.json';
+
+	var usersCallback = function (data) {
+
+		$.each(data, function(arrayID, key) {
+
+			$.each(key, function(userID, userData){
+
+				HTML = '<div class="new-member-container clearfix">';
+				HTML += '<img src="' + userData.userImgURL + '" alt="profile picture" class="new-member-profile-image">';
+				HTML += '<div class="new-user-name-date-container">';
+				HTML += '<div class="new-user-name dark-gray-font">' + userData.userName + '</div>';
+				HTML += '<div class="new-user-email purple-font"><a href="mailto:' + userData.userEmail + '">' + userData.userEmail + '</a></div>';
+				HTML += '</div> <!-- closing new-user-name-date-container -->';
+ 				HTML += '<div class="new-user-date gray-font">10/15/15</div>';
+ 				HTML += '</div> <!-- closing new-member-container -->';
+        
+ 				$('.new-members').append(HTML);
+			});
+		});
+    }
+
+	var activityCallback = function (data) {
+
+		$.each(data, function(arrayID, key) {
+
+			$.each(key, function(activityID, activityData){
+
+				HTML = '<div class="new-member-container clearfix">';
+				HTML += '<img src="' + activityData.userImgURL + '" alt="profile picture" class="new-member-profile-image">';
+				HTML += '<div class="new-user-name-date-container">';
+				HTML += '<div class="new-user-name dark-gray-font">' + activityData.userName + ' ' + activityData.userAction + '<span class="dark-gray-font">' + ' ' + activityData.groupName + '</span></div>';
+				HTML += '<div class="new-user-email dark-gray-font">' + activityData.activityTime + '</div>';
+				HTML += '</div> <!-- closing new-user-name-date-container -->';
+ 				HTML += '<div class="new-user-date"><i class="fa fa-angle-right fa-2x purple-font"></i></div>';
+ 				HTML += '</div> <!-- closing new-member-container -->';
+        
+ 				$('.recent-activity').append(HTML);
+			});
+		});
+    }
+
+	$.getJSON(usersURL, usersCallback);
+	$.getJSON(activityURL, activityCallback);
+
+
 	// # SWITCH DASHBOARD
 
 	var $navDashboard = $('.main-container nav ul li');
