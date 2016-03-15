@@ -176,7 +176,7 @@ nav li img {
   vertical-align: middle;
 }
 .selected {
-  border: .25rem solid green;
+  border: 0.25rem solid green;
 }
 
 
@@ -592,14 +592,13 @@ footer {
     vertical-align: middle;
   }
   .selected {
-    border-left: .25rem solid green;
+    border: 0.25rem solid #483D8B;
+    border-left: 0.25rem solid green;
   }
-
   .h1-textbox-container span input {
     width: 40%;
     margin: .75rem 1.5rem;
   }
-
   .traffic-h5 {
     padding: 1rem;
     display: inline-block;
@@ -622,7 +621,6 @@ footer {
     text-align: center;
     cursor: pointer;
   }
-
   .line-chart-container {
     margin: 0 2rem;
   }
