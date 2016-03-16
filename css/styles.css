@@ -142,6 +142,9 @@ header div:first-child {
   left: -8rem;
   z-index: 1000;
 }
+.notification li {
+  font-size: 0.85rem;
+}
 .close-notification {
   font-size: 1.5rem;
   position: absolute;

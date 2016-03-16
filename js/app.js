@@ -81,6 +81,7 @@ $(document).ready(function() {
 	$closeNotification.on('click', function() {
 		$notification.addClass('inactive');
 		$closeNotification.addClass('inactive');
+		$('.recent-activity').hide();
 	})
 
 	// # TOGGLE ON/OFF
